@@ -21,6 +21,8 @@ int main(){
     long long res=total-sum;
     while(res<0){
         res+=(long long)2147483648;
+        //오버플로우 해결 위해 int 사이즈 2147483647+1 만큼 더해줌
+        //양수값 제대로 나오면 출력
     }
         
     cout<<res<<"\n";
